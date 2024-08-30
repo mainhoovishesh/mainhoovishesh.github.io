@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "live-server": "^1.2.2"
+  },
+  "name": "live-server",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "base.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "launch"
+  },
+  "author": "",
+  "license": "ISC"
+}

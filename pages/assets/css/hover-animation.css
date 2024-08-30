@@ -1,0 +1,51 @@
+/* hover-animation.css */
+
+/* Define the hover animation for the project boxes */
+.project-text {
+    position: relative;
+    overflow: hidden;
+    background-color: #1d1d1d;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-text:before {
+    content: '';
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+/* .project-text:before {
+    opacity: 0.5;
+    transform: scale(1);
+    transition: transform 0.3s, opacity 0.3s;
+} */
+
+
+.project-text:hover {
+    transform: translateY(-10px);
+    background-color: #006696;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.project-text h1 {
+    position: relative;
+}
+
+.project-text h2 {
+    position: relative;
+    font-size: 21px; /* You can adjust the font size as needed */
+    font-weight: bold; /* Adjust the font weight as needed */
+    line-height: 1.5; /* Adjust the line height for better readability */
+    text-align: left; /* Adjust text alignment (center, left, right, etc.) */
+    color: #ffffff; /* Adjust the text color */
+}
+
+.project-text p {
+    position: relative;
+}
