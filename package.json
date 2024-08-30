@@ -5,7 +5,7 @@
   "name": "live-server",
   "version": "1.0.0",
   "description": "testing",
-  "main": "base.html",
+  "main": "index.html",
   "devDependencies": {},
   "scripts": {
     "test": "launch"

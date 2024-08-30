@@ -1,110 +1,123 @@
+/* Base styles for the entire portfolio */
 html, body {
-	font-size: 16px;
-	color: #dfdfdf;
-	background-color: #1a1a1a;
-  }
-  
-  a {
-	color: #ff6600;
-	text-decoration: none;
-	transition: color 0.3s ease;
-  }
-  
-  a:hover {
-	color: #ffcc00;
-  }
-  
-  .nav {
-	background-color: #1a1a1a;
-	border-bottom: 2px solid #ff6600;
-  }
-  
-  .nav-item {
-	margin-right: 1rem;
-  }
-  
-  .nav-toggle {
-	display: none;
-  }
-  
-  .section {
-	padding: 3rem 0;
-	text-align: justify; /* Set text alignment for all sections */
-  }
-  
-  .section-1 {
-	background: linear-gradient(90deg, #1a1a1a 0%, #000000 100%);
-  }
-  
-  .section-2 {
-	background-color: #000000;
-	color: #000000; /* Set text color for section 2 */
-  }
-  
-  .section-3 {
-	background-color: #000000;
-	color: #dfdfdf; /* Set text color for section 3 */
-  }
-  
-  .container {
-	max-width: 1200px;
-	margin: 0 auto;
-  }
-  
-  .title {
-	color: #ff6600;
-	margin-bottom: 2rem;
-  }
-  
-  .intro, .project-text p {
-	text-align: justify;
-  }
-  
-  .avatar {
-	height: 200px;
-	border-radius: 50%;
-	animation: pulseAvatar 2s ease-in-out infinite alternate;
-  }
-  
-  @keyframes pulseAvatar {
-	0% {
-	  transform: scale(1);
-	}
-	100% {
-	  transform: scale(1.2);
-	}
-  }
-  
-  .project-figure video, .project-figure img {
-	max-width: 100%;
-	height: auto;
-	border-radius: 10px;
-	box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
-  }
-  
-  .social-container img {
-	max-width: 100%;
-	max-height: 175px;
-	margin-bottom: 15px;
-	transition: transform 0.3s ease;
-  }
-  
-  .social-container img:hover {
-	transform: scale(1.1);
-  }
-  
-  .section-4 {
-	background-color: #1a1a1a;
-	padding: 1rem;
-  }
-  
-  .section-4 a {
-	color: #ff6600;
-	text-decoration: none;
-	transition: color 0.3s ease;
-  }
-  
-  .section-4 a:hover {
-	color: #ffcc00;
-  }
-  
+    height: 100%;
+	background: linear-gradient(to right, #FF3D00, #FF9A00);
+    color: rgba(255, 255, 255, 0); /* Ensures text is readable */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Optional: Set a standard font */
+}
+
+.nav {
+    background: linear-gradient(to right, #ff3c0000, #ff990000);
+    padding: 1rem;
+    border-bottom: 2px solid #FF9A00; /* Optional: adds a border at the bottom */
+}
+
+.nav-item:before {
+    color: white;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.nav-item {
+    color: white;
+	-webkit-text-fill-color: white;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+
+.nav-item:hover {
+    color: #FF9A00; /* Optional: change color on hover */
+}
+
+.nav-menu {
+    display: flex; /* Ensure the items are in a row */
+    align-items: center;
+}
+
+.hero {
+    background: linear-gradient(135deg, #FF7F7F, #FFD1D1);
+    background-size: 1000% 1000%;
+    animation: gradientBackground 10s ease infinite;
+    color: white;
+    padding: 400px 0;
+}
+
+@keyframes gradientBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.title, .subtitle {
+    text-align: center;
+	color: white;
+}
+
+.footer {
+    background-color: #6317003d;
+    color: white;
+    padding: 1rem 0;
+	margin-bottom: bottom;
+}
+
+.button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff4c3b;
+    transform: scale(1.05);
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.icon {
+	color: white;
+}
+
+
+.section {
+	align-items: center;
+}
+
+.content .has-text-centered {
+	margin-top: auto;
+}
+
+.avatar-loaded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar {
+    width: 500px; 
+    height: 500px;
+    border-radius: 50%; 
+    object-fit: contain; 
+	padding: 100px,10px;
+}
